@@ -1,0 +1,36 @@
+#action {
+  .title {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+
+  .redeem {
+    .active-confirmation {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    span {
+      font-weight: normal;
+    }
+    
+    .percentage-bg-color{
+        background-color:#54f5ed;
+    }
+  }
+
+  .form-control {
+    width: 100% !important;
+  }
+
+  .switch{
+      p{
+          margin-bottom: 0px;
+      }
+  }
+
+}

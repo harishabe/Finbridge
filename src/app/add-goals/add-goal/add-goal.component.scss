@@ -1,0 +1,14 @@
+@import './../../../sass/variable';
+#add-goals{
+    .img-center{
+        text-align: center;
+    }
+    .mat-card{
+        text-align: center;
+    }
+    .addGoal{
+        text-align: center;
+        color:$primary-1;
+        margin-bottom: 30px;
+    }
+}

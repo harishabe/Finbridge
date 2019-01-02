@@ -1,0 +1,22 @@
+@import './../../../sass/variable.scss';
+#panCardDetails {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+#userDetails {
+  .user-center {
+    margin: auto;
+  }
+  .toggle-button{
+      background-color:white;
+      .mat-button-toggle-checked{
+          background-color: $primary-1;
+          color:$white;
+      }
+  }
+}

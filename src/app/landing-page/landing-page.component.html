@@ -1,0 +1,354 @@
+<div class="landing-space">
+
+</div>
+<div id="navBar">
+  <mat-toolbar class="nav-header" style="box-shadow:none">
+    <div class="container-fluid">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <div class="btn-pull-right">
+        <button class="btn-login" mat-flat-button routerLink="/login">
+          <i class="material-icons">{{icon.lock}}</i> Login
+        </button>
+        <button class="btn-get-started" mat-flat-button routerLink="/signup" color="primary">
+          <i class="material-icons">{{icon.lock}}</i> GET STARTED
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="make-your-money">{{title.FINBRIDGE_SECTION_ONE_TITLE}}</h2>
+        <span>Invest effortlessly in mutual funds</span><br>
+        <span> manage portfolios & more</span>
+        <div class="invest-card-info">
+          <div class="col-sm-8">
+            <mat-card style="border-left:4px solid #649fe4;box-shadow:4px 2px 30px 2px #888888">
+              Best financial planning application.Use seamlessly in
+              mobile or desktop
+            </mat-card>
+          </div>
+          <div class="col-sm-8">
+            <mat-card style="border-left:4px solid #38f4c9;box-shadow:4px 2px 30px 2px #888888">
+              Follow funds to invest. Compare funds to select best that
+              suits your financial need
+            </mat-card>
+          </div>
+          <div class="col-sm-8">
+            <mat-card style="border-left:4px solid #e36590;box-shadow:4px 2px 30px 2px #888888">
+              We help you manage your portfolio to maximize returns
+            </mat-card>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img class="phone-img" src="../../assets/img/001 5sep18.png" />
+      </div>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section>
+  <div class="top-mutual-fund-parent">
+    <img style="width:100%" src="../../assets/img/Group 44.png" />
+    <div class="child">
+      <h2 class="text-info">Top Mutual funds</h2>
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let item of CardJSON">
+          <mat-card style="margin-top:10px">
+            <div class="row">
+              <div class="col-sm-8">
+                <h4>{{item.fundName}}</h4>
+              </div>
+              <div class="col-sm-4 plr0">
+                <img src="{{item.img}}" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>{{item.equity}}</p>
+                <h2 class="rate year-return-margin">{{item.rate}}</h2>
+                <p>{{item.yearReturn}}</p>
+              </div>
+              <div class="col">
+                <label width="width:3%">Risk : </label>
+                <div class="risk-line"></div>
+                <p class="text-right sip-start">{{item.sip}}</p>
+                <p class="text-right">{{item.amount}}</p>
+              </div>
+            </div>
+            <mat-divider></mat-divider>
+            <p>+ Follow</p>
+          </mat-card>
+        </div>
+      </div>
+      <h4 class="explore-more">
+        <a href="">Explore More ></a></h4>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img style="margin-top:25%" class="phone-img" src="../../assets/img/OWINKS1.png" />
+      </div>
+      <div class="col-sm-1"></div>
+
+      <div class="col-sm-5">
+        <h2 class="why-finbridge">{{title.FINBRIDGE_SECTION_THIRD_TITLE}}</h2>
+        <img src="../../assets/img/Path 8.png" /><br>
+        <span>Best mutual fund recommendations from industry</span><br>
+        <span>experts. There are all the tools to help you select</span><br>
+        <span>the best fund of your choice. Learn to invest while</span><br>
+        <span>you build your portfolio. Plan & action your</span><br>
+        <span>financial goals from one app.</span>
+        <div class="invest-card-info">
+          <div class="col-sm-8">
+            <mat-card style="border-left:4px solid #649fe4;box-shadow:4px 2px 30px 2px #888888">
+              Best financial planning application.Use seamlessly in
+              mobile or desktop
+            </mat-card>
+          </div>
+          <div class="col-sm-8">
+            <mat-card style="border-left:4px solid #38f4c9;box-shadow:4px 2px 30px 2px #888888">
+              Manage your portfolio with ease
+            </mat-card>
+          </div>
+          <div class="col-sm-8">
+            <mat-card style="border-left:4px solid #e36590;box-shadow:4px 2px 30px 2px #888888">
+              Compare funds to select best that suits your financial need
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section class="buy-insurance">
+  <div class="top-mutual-fund-parent">
+    <img style="width:100%" src="../../assets/img/Group 41.png" />
+    <div class="child">
+      <div class="row">
+        <div class="col-sm-5">
+          <h2 class="buy-insurance-info">{{title.FINBRIDGE_SECTION_FIFTH_TITLE}}</h2>
+          <span>Best mutual fund recommendations from industry</span><br>
+          <span>experts. There are all the tools to help you select</span><br>
+          <span>the best fund of your choice. Learn to invest while</span><br>
+          <span>you build your portfolio. Plan & action your</span><br>
+          <span>financial goals from one app.</span>
+        </div>
+        <div class="col-sm-7">
+          <div class="buy-insurance-card" style="margin-top:10%">
+            <div class="row">
+              <div class="col-sm-6">
+                <mat-card>
+                  <img src="../../assets/img/Group 28.png" />
+                  <span>Car Insurance</span>
+                </mat-card>
+              </div>
+              <div class="col-sm-6">
+                <mat-card>
+                  <img src="../../assets/img/Group 22.png" />
+                  <span>Two wheeler Insurance</span>
+                </mat-card>
+              </div>
+              <div class="col-sm-6">
+                <mat-card>
+                  <img src="../../assets/img/Group 29.png" />
+                  <span>Term Insurance</span>
+                </mat-card>
+              </div>
+              <div class="col-sm-6">
+                <mat-card>
+                  <img src="../../assets/img/Group 25.png" />
+                  <span>Health Insurance</span>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section>
+  <div class="container">
+    <h2 class="text-info" style="display:inline-block">Add Goals</h2> &nbsp;&nbsp;&nbsp;
+    <img src="../../assets/img/Group 43.png" />
+    <div style="padding:15px 0px 15px 126px">
+      <div class="row center">
+        <div class="col-sm-4">
+          <mat-card>
+            <img src="../../assets/img/Group 45.png" />
+            <h4>Easy Retire</h4>
+          </mat-card>
+        </div>
+        <div class="col-sm-4">
+          <mat-card>
+            <img src="../../assets/img/Group 46.png" />
+            <h4>Studty Higher</h4>
+          </mat-card>
+        </div>
+        <div class="col-sm-4">
+          <mat-card>
+            <img src="../../assets/img/Group 47.png" />
+            <h4>Buy dream car</h4>
+          </mat-card>
+        </div>
+      </div>
+      <br>
+      <div class="row center">
+        <div class="col-sm-4">
+          <mat-card>
+            <img src="../../assets/img/Group 50.png" />
+            <h4>Save Tax</h4>
+          </mat-card>
+        </div>
+        <div class="col-sm-4">
+          <mat-card>
+            <img src="../../assets/img/Group 49.png" />
+            <h4>Educate Child</h4>
+          </mat-card>
+        </div>
+        <div class="col-sm-4">
+          <mat-card>
+            <img src="../../assets/img/Group 48.png" />
+            <h4>Buy dream home</h4>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section>
+  <div class="top-mutual-fund-parent">
+    <img style="width:100%" src="../../assets/img/Group 39.png" />
+    <div class="child">
+      <h2 class="text-info center">Start Small, Grow big</h2>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <span>
+            These funds have small investments, quick withdrawl & better return, These funds have
+            small investments, quick withdrawl & better return. These funds have small investments,
+            quick withdrawl & better return.
+          </span>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let item of CardJSON">
+          <mat-card style="margin-top:10px">
+            <div class="row">
+              <div class="col-sm-8">
+                <h4>{{item.fundName}}</h4>
+              </div>
+              <div class="col-sm-4 plr0">
+                <img src="{{item.img}}" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>{{item.equity}}</p>
+                <h2 class="rate year-return-margin">{{item.rate}}</h2>
+                <p>{{item.yearReturn}}</p>
+              </div>
+              <div class="col">
+                <label width="width:3%">Risk : </label>
+                <div class="risk-line"></div>
+                <p class="text-right sip-start">{{item.sip}}</p>
+                <p class="text-right">{{item.amount}}</p>
+              </div>
+            </div>
+            <mat-divider></mat-divider>
+            <p>+ Follow</p>
+          </mat-card>
+        </div>
+      </div>
+      <h4 class="explore-more">
+        <a href="">Explore More ></a></h4>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section>
+  <div class="top-mutual-fund-parent">
+    <img style="width:100%" src="../../assets/img/Group 36.png" />
+    <div class="container">
+      <div class="row" style="position:absolute;bottom:0">
+        <div class="col-sm-6">
+          <img src="./../../assets/img/brandnew-tool-cm-en.png" />
+        </div>
+        <div class="col-sm-6">
+          <h2>Serious Security, Uncompromized privacy </h2>
+          <br>
+          <mat-card class="card-border-left">
+            Best financial planning application.Use seamlessly in
+            mobile or desktop
+          </mat-card>
+          <br>
+          <mat-card class="card-border-left">
+            Best financial planning application.Use seamlessly in
+            mobile or desktop
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="landing-space"></div>
+<section>
+  <div class="center" style="padding:50px">
+    <h2 class="text-info">Invest on the go, anywhere, anytime</h2>
+    <h4>Get the App, Download from Play store</h4>
+    <img src="./../../assets/img/Bitmap.png" />
+  </div>
+</section>
+<div class="landing-space"></div>
+
+<section style="background-color:white">
+  <div class="center">
+    <img src="./../../assets/img/Group.png" />
+  </div>
+</section>
+<div class="landing-space"></div>
+<footer class="footer-finbridge">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+
+      </div>
+      <div class="col-sm-3 border-left">
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>About us</p>
+      </div>
+      <div class="col-sm-3 border-left">
+        <p>Explore funds</p>
+        <p>My investments</p>
+      </div>
+      <div class="col-sm-3 border-left">
+        <p>FAQs</p>
+        <p>Blog</p>
+        <p>Contact us</p>
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+    </div>
+    <hr>
+    <div class="center">
+      <img src="./../../assets/img/Fill 3.png"/> 
+      <img src="./../../assets/img/Fill 23.png" style="margin-left:100px" />
+      <img src="./../../assets/img/Fill 33.png"  style="margin-left:20px"/>
+    </div>
+    <hr>
+  </div>
+</footer>

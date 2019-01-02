@@ -1,0 +1,46 @@
+<div id="profile" class="container-fluid grid-container">
+  <!-- BREADCRUMB -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/dashboard/scanner">Upload Docs</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Profile</li>
+    </ol>
+  </nav>
+  <!-- END BREADCRUMB -->
+
+  <!-- MOTOR PANEL (EM,ES)-->
+  <div fxLayout="row" fxLayout="row wrap" style="margin-bottom: 15px;">
+    <div fxFlex.md="50">
+      <mat-card style="padding:1px">
+        <mat-card-content>
+          <div class="profile">
+            <div class="profile-circle">
+              <mat-icon class="material-icons" style="font-size:50px;margin:30px">
+                <span>{{icon.person}}</span>
+              </mat-icon>
+            </div>
+            <div class="mt10"></div>
+            <mat-divider></mat-divider>
+            <div class="mt10"></div>
+            <div class="username">HARISHA B.E</div>
+            <div class="designation">Construction project manager</div>
+            <div class="mail">harisha.be@gmail.com</div>
+            <div class="gender">Male</div>
+            <div class="contact-number">Contact Number</div>
+            <div style="text-align:center">
+              <button mat-flat-button color="primary">(+91)-7760505981</button>
+            </div>
+            <div class="address">Address<i class="material-icons">
+                add_location
+              </i></div>
+            <div class="address-data">Apt 54,24/15,st,Parul Street<br>Palo Alto,California<br>USA,92010</div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+  </div>
+  <!-- END MOTOR PANEL -->
+</div>

@@ -1,0 +1,26 @@
+<div id="navBar">
+  <mat-toolbar class="navbar-header" color="primary">
+    <div class="container">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <button mat-button routerLink="/all">Explore funds</button>
+      <button mat-button routerLink="/addGoal">Add goals</button>      
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
+        <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
+        <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+<div id="secondary-navbar">
+  <div class="secondary-navbar">
+    <img src="./../../assets/img/Path 10.png" style="width:100%;height: 50px" />
+    <div class="centered" *ngIf="!showNavBar">
+      <ul>
+        <li><a routerLink="/all">All</a></li>
+        <li><a routerLink="/equity">Equity</a></li>
+        <li><a href="#">Debt</a></li>
+        <li><a href="#">Hybrid</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

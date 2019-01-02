@@ -1,0 +1,55 @@
+<div id="navBar">
+  <mat-toolbar class="navbar-header" color="primary">
+    <div class="container">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <button mat-button routerLink="/all">Explore funds</button>
+      <button mat-button routerLink="/addGoal">Add goals</button>
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
+        <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
+        <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+
+
+<section>
+  <div id="login" class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-5 login-top">
+        <h2 style="font-weight:100" class="text-center">{{MESSAGE.FINBRIDGE_LOGIN_TITLE}}</h2>
+        <p class="text-center">Don't have an account? <a href="" routerLink="/signup" class="sign-up-now">Sign-up</a>
+          now</p>
+        <mat-card>
+          <p class="text-center">Sign in security with Gmail</p>
+          <button class="login-mt-10 gmail-login" style="width:100%" mat-flat-button> Sign in with Google</button>
+          <span class="line-or-before"></span>
+          <span class="or-word">Or</span>
+          <span class="line-or-after"></span>
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password</label>
+              <label style="float:right">Forgot password?</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <button class="login-mt-10 sign-up" (click)="login()" style="width:100%" mat-flat-button color="primary">
+              <i class="material-icons lock-icon-left">lock</i>
+              {{MESSAGE.FINBRIDGE_SIGN_IN_BUTTON}}</button>
+          </form>
+          <p class="term-condition">
+            By signing up. you agree to our
+            <span class="text-underline">Terms & conditions</span> and
+            <span class="text-underline">our Privacy policy</span>
+          </p>
+        </mat-card>
+        <div class="center">
+          <img style="margin-top: 15px;" src="./../../assets/img/Group.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

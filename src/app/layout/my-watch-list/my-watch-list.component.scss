@@ -1,0 +1,99 @@
+@import './../../../sass/variable';
+
+#myWatchList {
+  .margin-filter {
+    margin-top: 15px;
+  }
+  .text-upper-case{
+    text-transform: uppercase;
+  }
+  .mat-card-top {
+    background-color: #fff2f2;
+    margin-top: -24px;
+    margin-right: -24px;
+    padding: 15px;
+    margin-left: -24px;
+  }
+
+  .info {
+    p {
+      margin-bottom: 0px;
+    }
+
+    .dateFollowed {
+      font-weight: bold;
+    }
+  }
+
+  img {
+    padding-left: 0px;
+    margin-top: -10px;
+    padding-right: 0px;
+  }
+
+  .plr0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mat-chip-list {
+    display: -webkit-inline-box;
+    width: 78%;
+  }
+
+  .label-width {
+    width: 22%;
+  }
+
+  .risk-right {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .sort-width {
+    width: 15%;
+  }
+
+  .category-width {
+    width: 8%;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .risk-line {
+    width: 72%;
+    height: 15px;
+    border: 1px solid $gray-700;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .sip-start {
+    margin-bottom: 0rem
+  }
+
+  .rate {
+    color: $blue;
+  }
+
+  .year-return-margin {
+    margin-bottom: 0.0rem;
+  }
+
+  .line {
+    border-left: 2px dotted $gray-700;
+  }
+
+  .equality-heading {
+    margin-top: 30px;
+    color: $primary-1;
+  }
+
+  .invest-now {
+    color: $primary-1;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

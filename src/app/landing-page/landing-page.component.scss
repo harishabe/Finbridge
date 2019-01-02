@@ -1,0 +1,113 @@
+@import './../../sass/variable.scss';
+
+
+.btn-login {
+  background-color: $bgColor !important;
+  border: 1px solid $primary-1;
+  color: $black;
+}
+
+.btn-get-starated {
+  border-radius: 4px;
+}
+
+.landing-space{
+  background-color: $white;
+  height: 20px;
+}
+
+.nav-header {
+  background-color: $bgColor;
+}
+
+.btn-pull-right {
+  display: inline-block;
+  float: right;
+}
+
+.material-icons {
+  font-size: 12px;
+}
+
+.make-your-money {
+  padding-top: 15%;
+  font-weight: 400;
+  color: $primary-1;
+}
+
+.invest-card-info {
+  .col-sm-8 {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+.top-mutual-fund-parent {
+  position: relative;
+
+  .child {
+    position: absolute;
+    position: absolute;
+    top: 8%;
+    left: 100px;
+    right: 100px;
+  }
+
+  .text-info {
+    color: $primary-1;
+    font-weight: 400
+  }
+}
+
+.phone-img {
+  width: 100%;
+}
+
+.explore-more {
+  color: $black !important;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.why-finbridge {
+  @extend .make-your-money;
+  padding-top: 0px;
+}
+
+.buy-insurance {
+  @extend .top-mutual-fund-parent;
+  color: $black !important;
+}
+
+.buy-insurance-info {
+  @extend .make-your-money;
+}
+
+.buy-insurance-card {
+  mat-card {
+    margin-bottom: 25px;
+    box-shadow: 4px 2px 30px 2px #888888;
+  }
+}
+
+.add-goals{
+  @extend .top-mutual-fund-parent;
+}
+
+.card-border-left{
+  border-left:4px solid #649fe4;
+  box-shadow:4px 2px 30px 2px #888888;
+}
+
+.footer-finbridge{
+  background-color:#023445;
+  height: 200px;
+  color:$white;
+  padding: 15px;
+  .border-left{
+    border-left:1px solid $white;
+  }
+  .border-right{
+    border-left:1px solid $white;
+  }
+}

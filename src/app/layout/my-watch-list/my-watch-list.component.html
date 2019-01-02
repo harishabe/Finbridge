@@ -1,0 +1,43 @@
+<div id="myWatchList">
+  <h3 class="primary-heading text-upper-case">Following Funds (3)</h3>
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let item of CardJSON">
+      <mat-card>
+        <mat-card-content class="mat-card-top">
+          <div class="row">
+            <div class="col-sm-8">
+              <h4>{{item.fundName}}</h4>
+            </div>
+            <div class="col-sm-4 plr0">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>{{item.equity}}</p>
+              <h2 class="rate year-return-margin">{{item.rate}}</h2>
+              <p>{{item.yearReturn}}</p>
+            </div>
+            <div class="col">
+              <label width="width:3%">Risk : </label>
+              <div class="risk-line"></div>
+              <p class="text-right sip-start">{{item.sip}}</p>
+              <p class="text-right">{{item.amount}}</p>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-content>
+          <div class="info">
+            <p class="dateFollowed">Date Followed</p>
+            <p>{{item.date}}</p>
+            <br>
+            <p>{{item.invest1}}</p>
+            <p>{{item.invest2}}</p>
+          </div>
+          <br>
+          <a href class="invest-now">Invest Now</a>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

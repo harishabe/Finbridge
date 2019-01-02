@@ -1,0 +1,70 @@
+<div id="navBar">
+  <mat-toolbar class="navbar-header" color="primary">
+    <div class="container">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <button mat-button routerLink="/all">Explore funds</button>
+      <button mat-button routerLink="/addGoal">Add goals</button>
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
+        <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
+        <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+<div id="secondary-navbar">
+  <div class="secondary-navbar">
+    <img src="./../../assets/img/Path 10.png" style="width:100%;height: 50px" />
+    <div class="centered" *ngIf="!showNavBar">
+      <ul>
+        <li><a routerLink="/all">All</a></li>
+        <li><a routerLink="/equity">Equity</a></li>
+        <li><a href="#">Debt</a></li>
+        <li><a href="#">Hybrid</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="more-detail-stock" class="margin-top-20">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h3>ICIC Pru LT Equity Fund(Tax Saving)(G)- Regular</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <h1>10.48%</h1>
+            <span>5 yr returns</span>
+          </div>
+          <div class="col-sm-4">
+            <button class="sign-in" mat-flat-button routerLink="/login" color="primary" style="background-color: white; color:
+              black; border: 1px solid #08a9df;">+
+              Follow</button>
+            &nbsp;
+            <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">> Invest Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <img style="width:100%" src="./../../../assets/img/Group 43.png" />
+        <p><b>People also view</b></p>
+        <mat-card>
+          <div class="row">
+            <div class="col-sm-2" style="padding-left:0px">
+              <img style="width:73px" src="./../../../assets/img/Bitmap3.png" />
+            </div>
+            <div class="col-sm-8">
+              <span>SBI Focused Equity Fund(G) - Regular</span>
+            </div>
+            <div class="col-sm-2" style="padding-left:0px">
+              <h3 class="primary-heading">15.39%</h3>
+              <span>1yr returns</span>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <p> Compare</p>
+        </mat-card>
+
+      </div>
+    </div>
+  </div>
+</div>

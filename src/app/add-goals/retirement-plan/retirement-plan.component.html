@@ -1,0 +1,63 @@
+<div id="navBar">
+  <mat-toolbar class="navbar-header" color="primary">
+    <div class="container">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <button mat-button routerLink="/all">Explore funds</button>
+      <button mat-button routerLink="/addGoal">Add goals</button>      
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
+        <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
+        <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+
+
+<div id="retirement-plan" class="container margin-top-20">
+  <div class="row">
+    <div class="col-sm-2">
+      <h4>YOUR GOAL</h4>
+    </div>
+    <div class="col-sm-10">
+      <h4>RETIREMENT PLAN</h4>
+      <p>You would need to build a retirement corpus which will be available to</p>
+      <p>you once you retire to continue living in your current lifestyle.</p>
+    </div>
+  </div>
+
+  <div class="retirement-plan-form">
+    <label class="label-font">
+      <span class="number">1</span> What's your name?
+    </label>
+    <mat-form-field>
+      <input matInput placeholder="Type your answer here">
+    </mat-form-field>
+    <div class="right">
+      press <h4 class="inline">ENTER</h4> or
+      <button routerLink='/addGoal/retirementPlanDetail' mat-button class="retirement-plan-btn">OK</button>
+    </div>
+
+    <label class="label-font">
+      <span class="number">2</span> Hi Sanath, What's your age?
+    </label>
+    <mat-form-field>
+      <input matInput placeholder="Type your answer here">
+    </mat-form-field>
+    <div class="right">
+      press <h4 class="inline">ENTER</h4> or
+      <button mat-button class="retirement-plan-btn">OK</button>
+    </div>
+
+    <label class="label-font">
+      <span class="number">3</span> and What age you plan to retire?
+    </label>
+    <mat-form-field>
+      <input matInput placeholder="Type your answer here">
+    </mat-form-field>
+    <div class="right">
+      press <h4 class="inline">ENTER</h4> or
+      <button mat-button class="retirement-plan-btn">OK</button>
+    </div>
+
+  </div>
+</div>

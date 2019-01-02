@@ -1,0 +1,66 @@
+@import './variable.scss';
+.center{
+    text-align: center;
+}
+.mat-toolbar{
+   box-shadow: 0 0 10px #e3e3e3;
+}
+.margin-top-20{
+    margin-top:20px;
+}
+
+.mat-chip.mat-standard-chip{
+    background-color:$white;
+    border:2px solid #F5F5F5;
+}
+
+.mat-chip.mat-standard-chip:hover{
+    background-color:$primary-1;
+}
+
+.mat-chip{
+    background-color:$white;
+}
+
+.mat-card-title{
+    font-size: 16px;
+    color:$primary-1;
+}
+
+.primary-heading{
+    color: $primary-1;
+    margin-bottom: 10px;
+}
+
+.mat-card-content{
+    font-size: 16px;
+}
+
+.mat-flat-button .mat-primary{
+    background-color: $primary-1;
+}
+
+.mat-form-field{
+    font-size: 16px;
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary{
+    background-color: $primary-1;
+}
+
+label{
+    font-weight:400;
+}
+
+.percentage-bg-color{
+    background-color:#54f5ed ;
+}
+
+.percentage-bg-red{
+    background-color:#f48985;
+}
+
+.external-funds{
+    background-color:#ff9c17;
+    color:$white;
+}

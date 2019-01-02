@@ -1,0 +1,75 @@
+<div id="navBar">
+  <mat-toolbar class="navbar-header" color="primary">
+    <div class="container">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <button mat-button routerLink="/all">Explore funds</button>
+      <button mat-button routerLink="/addGoal">Add goals</button>      
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
+        <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
+        <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+
+<div id="retirement-plan-invest" class="container margin-top-20">
+  <div class="row">
+    <div class="col-sm-2">
+      <h4>YOUR GOAL</h4>
+    </div>
+    <div class="col-sm-10">
+      <h4>RETIREMENT PLAN</h4>
+      <p>You would need to build a retirement corpus which will be available to</p>
+      <p>you once you retire to continue living in your current lifestyle.</p>
+    </div>
+  </div>
+
+  <mat-card class="card-border-left">
+    <div class="row">
+      <div class="col-sm-5 center">
+        <p>Your Monthly investment for 24 years</p>
+        <h2>10,346</h2>
+      </div>
+
+      <div class="col-sm-2 line">
+      </div>
+
+      <div class="col-sm-5 center">
+        <p>One-time lumpsum investment for 24 years</p>
+        <h2>50,000</h2>
+      </div>
+    </div>
+  </mat-card>
+  <br><br>
+  <h3>MUTUAL FUND INVESTMENT(4)</h3>
+  <mat-card>
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Fund</p>
+        <p>SBI Focused Equity Fund Growth- Regular</p>
+      </div>
+      <div class="col-sm-2">
+        <p>Category</p>
+        <p>2 JUL 17</p>
+        <p>284 days</p>
+      </div>
+      <div class="col-sm-1">
+        <p>Risk</p>
+        <p>28.89</p>
+      </div>
+      <div class="col-sm-3">
+        <p>Lumpsum allocation</p>
+        <p>20,000</p>
+        <p>10 units</p>
+      </div>
+      <div class="col-sm-3">
+        <p>5 year Returns</p>
+        <p>+ 000 <span class="amount-per">+00%</span></p>
+      </div>
+    </div>
+  </mat-card>
+  <br>
+  <div class="center">
+        <button mat-button class="invest-now-btn">Invest Now</button>
+  </div>
+</div>

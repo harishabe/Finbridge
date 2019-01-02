@@ -1,0 +1,64 @@
+@import './../../../../sass/variable';
+
+
+.sign-in {
+  background: $primary-1;
+  color: $white;
+}
+
+#navBar {
+  .dashboard-icon{
+    a{
+      padding-left:10px;
+    }
+  }
+  ul{
+    li:hover{
+        background-color: #ebebeb;
+        padding:5px;      
+    }
+  }
+}
+
+
+#secondary-navbar {
+  .secondary-navbar {
+    position: relative;
+    text-align: center;
+    color: $white;
+
+    .img-bg {
+      width: 100%;
+      height: 50px;
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 42%;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        li {
+          float: left;
+
+          a {
+            display: block;
+            color: $white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+          a:hover:not(.active) {
+            border-bottom: 1px solid $activated;
+          }
+        }
+      }
+    }
+  }
+}

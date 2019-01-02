@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './theme.scss';
+@import './variable.scss';
+@import './main.scss';
+@import './common.scss';
+@import './../app/login/login.component';
+@import './../app/layout/dashboardNavBar/primary-nav-bar/dashboardNavBar';
+@import './../app/layout/nav-bar/nav-bar.component';
+@import './../app/layout/profile/profile.component';
+@import './../app/layout/briefing/briefing.component';
+@import './../app/layout/my-watch-list/my-watch-list.component';
+@import './../app/layout/switches/switches.component';
+@import './../app/layout/switches/switch/switch.component';
+@import './../app/layout/userInfo/userInfo.component';
+@import './../app/add-goals/add-goals.component';
+@import './../app/layout/actions/action.component';
+.mat-chip.mat-standard-chip{
+  background-color:$white;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f7f9fb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow';
+  font-weight: 500;
+}
+
+/* barlow-regular - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  // font-weight: 600;
+  src:url('../assets/barlow-font/Barlow-Black.ttf');
+  src:url('../assets/barlow-font/Barlow-BlackItalic.ttf');
+  src:url('../assets/barlow-font/Barlow-Bold.ttf');
+  src:url('../assets/barlow-font/Barlow-BoldItalic.ttf');
+  src:url('../assets/barlow-font/Barlow-ExtraBold.ttf');
+  src:url('../assets/barlow-font/Barlow-ExtraBoldItalic.ttf');
+  src: url('../assets/barlow-font/Barlow-ExtraLight.ttf');
+  src:url('../assets/barlow-font/Barlow-ExtraLightItalic.ttf');
+  src:url('../assets/barlow-font/Barlow-Italic.ttf');
+  src:url('../assets/barlow-font/Barlow-Light.ttf');
+  src:url('../assets/barlow-font/Barlow-LightItalic.ttf');
+  src:url('../assets/barlow-font/Barlow-Medium.ttf');
+  src:url('../assets/barlow-font/Barlow-MediumItalic.ttf');
+  src:url('../assets/barlow-font/Barlow-Regular.ttf');
+}

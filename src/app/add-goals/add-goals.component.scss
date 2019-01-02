@@ -1,0 +1,77 @@
+#retirement-plan {
+  .retirement-plan-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .retirement-plan-form>* {
+    width: 60%;
+  }
+
+  .label-font {
+    font-size: 20px;
+  }
+
+  .number {
+    border: 0px solid white;
+    border-color: white;
+    padding-left: 9px;
+    background-color: #0187a2;
+    padding-right: 10px;
+    color: white;
+    border-radius: 2px;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .inline {
+    display: inline-block;
+  }
+
+  .retirement-plan-btn {
+    background-color: #25d5cd;
+    border: 2px solid white !important;
+    color: white;
+    border-radius: 5px !important;
+  }
+}
+
+
+#retirement-plan-detail {
+  .underline {
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+  .margin-bottom-0 {
+    margin-bottom: 0px;
+  }
+
+  .see-your-plan-btn {
+    background-color: #ffa70b;
+    color: white;
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+#retirement-plan-invest {
+  .line {
+    border-left: 1px solid #f9f9f9;
+  }
+
+  .card-border-left {
+    border-left: 5px solid #5cc4dd;
+  }
+
+  .amount-per {
+    background-color: #25f3e9;
+  }
+
+  .invest-now-btn {
+    background-color: #08a9df;
+    color: white;
+    padding: 0px 50px 0px 50px;
+  }
+}

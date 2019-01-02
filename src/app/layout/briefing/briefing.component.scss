@@ -1,0 +1,82 @@
+@import './../../../sass/variable';
+
+#briefing {
+
+  .margin-top-80 {
+    margin-top: 80px;
+  }
+
+  .margin-top-30 {
+    margin-top: 30px;
+  }
+
+  .text-color {
+    font-size: 15px;
+    color: $white;
+    margin-bottom: 0px;
+  }
+
+  span{
+    font-size:15px;
+  }
+
+  .amount {
+    color: $white;
+  }
+
+  .current-asset-value {
+    background-image: url("/assets/img/db4.png");
+    height: 133px;
+    width: 247px;
+
+    .current-asset-text {
+      @extend .text-color;
+    }
+
+    .current-asset-amount {
+      @extend .amount;
+    }
+  }
+
+  .total-investment {
+    background-image: url("/assets/img/db3.png");
+    height: 133px;
+    width: 247px;
+
+    .total-investment-text {
+      @extend .text-color;
+    }
+
+    .toal-investement-amount {
+      @extend .amount;
+    }
+  }
+
+  .annual-return {
+    background-image: url("/assets/img/db2.png");
+    height: 133px;
+    width: 247px;
+
+    .annual-return-text {
+      @extend .text-color;
+    }
+
+    .annual-return-amount {
+      @extend .amount;
+    }
+  }
+
+  .realized-goal {
+    background-image: url("/assets/img/db1.png");
+    height: 133px;
+    width: 247px;
+
+    .realized-goal-text {
+      @extend .text-color;
+    }
+
+    .realized-goal-amount {
+      @extend .amount;
+    }
+  }
+}

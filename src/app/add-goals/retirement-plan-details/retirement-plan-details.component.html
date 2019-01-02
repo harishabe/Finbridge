@@ -1,0 +1,71 @@
+<div id="navBar">
+  <mat-toolbar class="navbar-header" color="primary">
+    <div class="container">
+      <img src="./../../assets/img/Finbrij_Logo2-1.png" />
+      <button mat-button routerLink="/all">Explore funds</button>
+      <button mat-button routerLink="/addGoal">Add goals</button>      
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
+        <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
+        <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+
+
+<div id="retirement-plan-detail" class="container margin-top-20">
+  <div class="row">
+    <div class="col-sm-2">
+      <h4>YOUR GOAL</h4>
+    </div>
+    <div class="col-sm-10">
+      <h4>RETIREMENT PLAN</h4>
+      <p>You would need to build a retirement corpus which will be available to</p>
+      <p>you once you retire to continue living in your current lifestyle.</p>
+    </div>
+  </div>
+
+  <span>Our recommentations are based on these details</span>
+  <mat-card>
+    <div class="row">
+      <div class="col-sm-1">
+        <p>Your Age</p>
+        <p class="underline">36</p>
+      </div>
+      <div class="col-sm-2">
+        <p>Retirement Age</p>
+        <p class="underline">60</p>
+      </div>
+      <div class="col-sm-2">
+        <p>Life expectancy</p>
+        <p class="underline">75</p>
+      </div>
+      <div class="col-sm-3">
+        <p>Current monthly expenses</p>
+        <p class="underline">50,000</p>
+      </div>
+      <div class="col-sm-3">
+        <p>Lumpsum investment now</p>
+        <p class="underline">10,00,000</p>
+      </div>
+      <div class="col-sm-1">
+        <p>Inflation</p>
+        <p class="underline">5%</p>
+      </div>
+    </div>
+  </mat-card>
+  <br><br>
+  <mat-card>
+    <div class="center">
+      <p class="margin-bottom-0">You will need to invest Rs. 10,346 monthly for 24 years plus a</p>
+      <p>lumpsum of Rs. 10,00,000 today to build a corpus of</p>
+      <h2>Rs. 2,24,98,700</h2>
+      <p>in 24 years</p>
+      <p>Note: Inflation adjusted</p>
+    </div>
+  </mat-card>
+  <br>
+  <div class="center">
+    <button class="see-your-plan-btn" routerLink='/addGoal/retirementPlanInvest' mat-button>See your plan</button>
+  </div>
+</div>

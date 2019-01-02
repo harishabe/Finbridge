@@ -1,0 +1,50 @@
+@import './../../../sass/variable';
+
+#myPortfolio {
+  .portfolio-heading {
+    color: $primary-1;
+    text-transform: uppercase;
+  }
+  .pending-confirmation{
+    font-weight: bold;
+    p{
+      margin-bottom: 0px;
+    }
+    .title{
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  .line-height {
+    margin-top: 50px;
+  }
+
+  table {
+    width: 100%;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  }
+
+  .margin-top-20 {
+    margin-top: 20px
+  }
+
+  .margin-top-30{
+    margin-top:30px;
+  }
+
+  .next-step-amount {
+    color: gray;
+    font-size: 13px;
+  }
+
+  .mat-cell,
+  .mat-footer-cell {
+    font-size: 15px !important;
+  }
+
+  .mat-header-cell {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
